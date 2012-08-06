@@ -1,0 +1,5 @@
+SUGAR_TYPE="fructose"
+inherit sugar
+
+
+REQUIRES="girepository-Evince3.0 girepository-GConf2.0 girepository-Gst0.10 girepository-Gtk3.0 girepository-WebKit3.0"
