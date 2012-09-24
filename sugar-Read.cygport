@@ -1,5 +1,8 @@
+NAME="sugar-Read"
+VERSION=99
+RELEASE=2
+PATCH_URI="01-gstreamer010.patch"
 SUGAR_TYPE="fructose"
 inherit sugar
-
 
 REQUIRES="girepository-Evince3.0 girepository-GConf2.0 girepository-Gst0.10 girepository-Gtk3.0 girepository-WebKit3.0"

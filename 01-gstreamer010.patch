@@ -1,0 +1,26 @@
+--- origsrc/Read-99/speech.py	2012-03-08 07:20:03.000000000 -0600
++++ src/Read-99/speech.py	2012-09-24 10:41:12.627267100 -0500
+@@ -22,8 +22,8 @@ _logger = logging.getLogger('read-etexts
+ supported = True
+ 
+ try:
+-    import pygst
+-    pygst.require("0.10")
++    import gi
++    gi.require_version("Gst", "0.10")
+     from gi.repository import Gst
+     #Gst.ElementFactory.make('espeak', 'source')
+     from speech_gst import *
+--- origsrc/Read-99/speech_gst.py	2012-03-07 07:05:51.000000000 -0600
++++ src/Read-99/speech_gst.py	2012-09-24 10:41:38.001718400 -0500
+@@ -15,8 +15,8 @@
+ # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ 
+ import logging
+-import pygst
+-pygst.require("0.10")
++import gi
++gi.require_version("Gst", "0.10")
+ from gi.repository import Gst
+ 
+ import speech
