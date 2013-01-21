@@ -1,6 +1,6 @@
 NAME="sugar-Read"
 VERSION=99
-RELEASE=2
+RELEASE=3
 PATCH_URI="01-gstreamer010.patch"
 SUGAR_TYPE="fructose"
 inherit sugar
